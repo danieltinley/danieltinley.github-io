@@ -1,0 +1,108 @@
+<!DOCTYPE html>
+
+<html lang="en">
+
+    <head>
+        <meta charset="UTF-8">
+        <title>Tachyon Systems</title>
+        <link rel="stylesheet" href="css/style.css">
+    </head>
+    
+    <body>
+
+        <h1 data-value="TACHYON SYSTEMS">TACHYON SYSTEMS</h1>
+        <script src="scripts/text_scramble.js"></script>
+
+        <h3>Request a Quote</h3>
+        <form action="https://formsubmit.co/2ce0f2c5ee743fc6a25c1496ce8f4a18" id="quote_form" method="POST">
+
+            <div>
+                <label for="name">Name</label>
+                <input name="Name" id="name" required>
+            </div>
+
+            <div>
+                <label for="email">Email</label>
+                <input type="email" name="Email" id="email" required>
+            </div>
+
+            <div>
+                <label for="phone">Phone</label>
+                <input type="tel" name="Phone" id="phone" required>
+            </div>
+
+            <div>
+                <label for="budget">Budget $</label>
+                <input type="number" name="Budget" id="budget" min="500" max="10000" step="100" required>
+                <label class="tooltipsmall" onmouseover="setTooltipWidth(this)">[?]
+                    <span class="tooltiptextsmall">
+                        Minimum of $500
+                    </span>
+                </label>
+            </div>
+
+            <div>
+                <label for="size">Size</label>
+                <select name="Size" id="size">
+                    <option value="Full Tower">Full Tower</option>
+                    <option value="Mid Tower">Mid Tower</option>
+                    <option value="Mini Tower">Mini Tower</option>
+                    <option value="SFF">SFF / ITX</option>
+                </select>
+                <label class="tooltip" onmouseover="setTooltipWidth(this)">[?]
+                    <span class="tooltiptext">
+                        Dimensions are height by width<br>
+                        Full Tower - 55-75cm by 22-32cm<br>
+                        Mid Tower - 35-55cm by 15-25cm<br>
+                        Mini Tower - 30-45cm by 15-24cm<br>
+                        SFF/ITX - Smallest, sizes vary
+                    </span>
+                </label>
+            </div>
+
+            <div>
+                <label for="peripherals">BYO Peripherals</label>
+                <input type="checkbox" name="Peripherals" id="peripherals">
+                <label class="tooltip" onmouseover="setTooltipWidth(this)">[?]
+                    <span class="tooltiptext">
+                        Check this box if you already own external devices such as a monitor, keyboard or mouse
+                    </span>
+                </label>
+            </div>
+
+            <div>
+                <p>Brand Choices</p>
+            </div>
+
+            <div>
+                <label for="cpu">CPU</label>
+                <select name="CPU" id="cpu">
+                    <option value="Any">Any</option>
+                    <option value="Intel">Intel (Recommended)</option>
+                    <option value="AMD">AMD</option>
+                </select>
+            </div>
+
+            <div>
+                <label for="gpu">Graphics Card</label>
+                <select name="GPU" id="gpu">
+                    <option value="Any">Any</option>
+                    <option value="None (iGPU)">None (iGPU)</option>
+                    <option value="NVidia">NVidia (Recommended)</option>
+                    <option value="AMD">AMD</option>
+                </select>
+            </div>
+
+            <div>
+                <button type="reset">Clear</button>
+                <button type="submit">Submit</button>
+            </div>
+
+        </form>
+
+        <!-- <script src="scripts/mobilenum.js"></script> -->
+        <!-- <script src="scripts/tooltip.js"></script> -->
+        
+    </body>
+
+</html>
